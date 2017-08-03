@@ -36,11 +36,7 @@ namespace ListDifference
             {
                 throw new ArgumentException("List2 cannot be empty");
             }
-            /*var difference = from number in list1
-                         join r in list2 
-                         on number equals r into numbers
-                         where !numbers.Any()
-                         select number;*/
+            
             var differences = from number in list1
                               where !list2.Contains(number)
                               select number;
