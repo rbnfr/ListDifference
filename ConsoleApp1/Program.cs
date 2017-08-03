@@ -21,7 +21,7 @@ namespace ListDifference
 
             var difference = Difference.DifferenceMethodSyntax(list1,list2);
 
-            Console.WriteLine("Difference between lists (Method Syntax):");
+            Console.WriteLine("Difference between list1 and list2 (Method Syntax):");
             foreach (var element in difference)
             {
                 Console.WriteLine(element);
@@ -30,7 +30,7 @@ namespace ListDifference
 
             var differences = Difference.DifferenceQuerySyntax(list1,list2);
 
-            Console.WriteLine("Difference between lists (Query syntax):");
+            Console.WriteLine("Difference between list 1 and list2 (Query syntax):");
             foreach (var element in differences)
             {
                 Console.WriteLine(element);
